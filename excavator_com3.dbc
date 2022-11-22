@@ -38,7 +38,7 @@ VAL_TABLE_ status_cmd 1 "cmd disable" 0 "cmd enable" ;
 VAL_TABLE_ direction_cmd 1 "backword" 0 "forward" ;
 
 
-BO_ 2550202113 lever_cmd_2: 8 Vector__XXX
+BO_ 2550202113 lever_cmd_2: 4 Vector__XXX
  SG_ right_track_direction_cmd : 21|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ right_track_cmd : 22|10@1+ (0.1,0) [0|102.3] "%" Vector__XXX
  SG_ right_track_status_cmd : 20|1@1+ (1,0) [0|0] "" Vector__XXX
@@ -69,10 +69,10 @@ BA_DEF_DEF_  "GenMsgCycleTime" 0;
 BA_DEF_DEF_  "DBName" "";
 BA_DEF_DEF_  "VFrameFormat" "J1939PG";
 BA_ "DBName" "excavator_com3";
-BA_ "VFrameFormat" BO_ 2550202113 1;
 BA_ "GenMsgCycleTime" BO_ 2550202113 10;
-BA_ "VFrameFormat" BO_ 2550202112 1;
+BA_ "VFrameFormat" BO_ 2550202113 1;
 BA_ "GenMsgCycleTime" BO_ 2550202112 10;
+BA_ "VFrameFormat" BO_ 2550202112 1;
 VAL_ 2550202113 right_track_direction_cmd 1 "backword" 0 "forward" ;
 VAL_ 2550202113 right_track_status_cmd 1 "cmd disable" 0 "cmd enable" ;
 VAL_ 2550202113 left_track_direction_cmd 1 "backword" 0 "forward" ;
