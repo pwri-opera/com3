@@ -9,6 +9,7 @@ COM3は土木研究所の自律施工技術基盤OPERAにおいて提案する�
   - [dbcpppのインストール](https://github.com/genkiiii/dbcppp)
   - [RTTRのインストール](https://github.com/rttrorg/rttr)
   - [canaryのインストール](https://github.com/djarek/canary)
+  - boostのインストール(1.7.5で動作確認済み)
 - com3ファイルのインストール
   - git clone https://github.com/pwri-opera/com3
   - cd com3
