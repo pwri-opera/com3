@@ -253,8 +253,8 @@ namespace excavator_com3
   struct Machine_Setting_Cmd
   {
     std::uint8_t horn_cmd;
-    std::uint8_t travel_signal_switch_cmd;
-    std::uint8_t front_signal_switch_cmd;
+    std::uint8_t travel_signal_switch_command;
+    std::uint8_t front_signal_switch_command;
     bool working_mode_notice;
     std::uint8_t yellow_led_mode;
     std::uint8_t travel_speed_mode;
@@ -455,6 +455,9 @@ namespace excavator_com3
 
     rttr::registration::class_<Machine_Setting_Cmd>("Machine_Setting_Cmd")
         .constructor<>()
+        .property("Machine_Setting_Cmd::horn_cmd", &Machine_Setting_Cmd::horn_cmd)
+        .property("Machine_Setting_Cmd::travel_signal_switch_command", &Machine_Setting_Cmd::travel_signal_switch_command)
+        .property("Machine_Setting_Cmd::front_signal_switch_command", &Machine_Setting_Cmd::front_signal_switch_command)
         .property("Machine_Setting_Cmd::working_mode_notice", &Machine_Setting_Cmd::working_mode_notice)
         .property("Machine_Setting_Cmd::yellow_led_mode", &Machine_Setting_Cmd::yellow_led_mode)
         .property("Machine_Setting_Cmd::travel_speed_mode", &Machine_Setting_Cmd::travel_speed_mode)
