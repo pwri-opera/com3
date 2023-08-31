@@ -46,7 +46,6 @@ namespace excavator_com3
     bool can_error_pl;
     bool system_error;
     bool pilot_shutoff_valve_state;
-    std::uint8_t unlock_cmd_state;
     bool lock_cmd_state;
     static const std::uint64_t id = 2566882536;
     static const std::uint64_t cycle_time = 50;
@@ -334,7 +333,6 @@ namespace excavator_com3
         .property("Machine_State::can_error_pl", &Machine_State::can_error_pl)
         .property("Machine_State::system_error", &Machine_State::system_error)
         .property("Machine_State::pilot_shutoff_valve_state", &Machine_State::pilot_shutoff_valve_state)
-        .property("Machine_State::unlock_cmd_state", &Machine_State::unlock_cmd_state)
         .property("Machine_State::lock_cmd_state", &Machine_State::lock_cmd_state);
 
     rttr::registration::class_<Hydraulic_Flow_Rate_2>("Hydraulic_Flow_Rate_2")
